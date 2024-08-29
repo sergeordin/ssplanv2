@@ -20,7 +20,7 @@ const App: React.FC = observer(() => {
   return (
     <>
       <div className="mainTitle" style={{ textAlign: "center" }}>
-        Soulstone Survivors The Unholy Cathedral Build Planner by Solxnx
+        Soulstone Survivors The Unholy Cathedral Build Planner v2 by Solxnx
       </div>
 
       <div className="parent">
