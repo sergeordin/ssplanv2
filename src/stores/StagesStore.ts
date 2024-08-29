@@ -58,11 +58,12 @@ class StageStore {
       window.alert("Ability already used!");
       return;
     }
-    AbilitiesStore.toggleChecked(ability.name);
     if (this.banish.length < this.stageSize) {
       this.banish.push(ability);
+      AbilitiesStore.toggleChecked(ability.name);
     } else {
       window.alert("Banish list is full!");
+      return;
     }
   }
 
