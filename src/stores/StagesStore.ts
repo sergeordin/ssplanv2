@@ -44,12 +44,12 @@ class StageStore {
 
     const targetStage = this.stages.find((stage) => stage.length < this.stageSize);
 
-    AbilitiesStore.toggleChecked(ability.name);
-
     if (targetStage) {
       targetStage.push(ability);
+      AbilitiesStore.toggleChecked(ability.name);
     } else {
       window.alert("All stages are full!");
+      return;
     }
   }
 
