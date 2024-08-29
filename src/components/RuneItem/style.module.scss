@@ -1,0 +1,14 @@
+.rune{
+  outline: 2px solid grey;
+  border-radius: 35%;
+  margin: 10px;
+  padding: 2px;
+  cursor: pointer;
+  //opacity: .2;
+}
+.runeActive{
+  outline: 2px solid lime;
+  border-radius: 35%;
+  margin: 10px;
+  //opacity: 0.2;
+}
