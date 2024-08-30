@@ -37,18 +37,10 @@ class AbilitiesStore {
   }
 
   setCurrentAbilities(hero: HeroType) {
-    this.weapons = [];
-    this.skills = [];
-
-    const currentHeroWeapons = hero.weapons;
-    for (const weapon of currentHeroWeapons) {
-      this.weapons.push(this.abilitiesMap.get(weapon) as AbilityType);
-    }
-
-    const currentHeroSkills = hero.skills;
-    for (const skill of currentHeroSkills) {
-      this.skills.push(this.abilitiesMap.get(skill) as AbilityType);
-    }
+    this.weapons = hero.weapons.map(
+      (weapon) => this.abilitiesMap.get(weapon) as AbilityType
+    );
+    this.skills = hero.skills.map((skill) => this.abilitiesMap.get(skill) as AbilityType);
   }
 }
 
